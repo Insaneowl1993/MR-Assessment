@@ -4,8 +4,8 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  min-height: 100vh; /* Ensure the body occupies full viewport height */
+  justify-content: center;
+  min-height: 100vh; 
 }
 
 .navbar {
@@ -39,7 +39,7 @@ main.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1; /* Make the main content take up remaining space */
+  flex: 1;
 }
 
 .product-details {

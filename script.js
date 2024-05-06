@@ -7,13 +7,12 @@ function toggleMiniCart() {
 // Load local product image
 function loadLocalImage() {
     const productImage = document.getElementById('product-image');
-    productImage.src = 'classic-tee.jpg'; // Path to the local image file
+    productImage.src = 'classic-tee.jpg';
 }
 
 // Initialize product details
 function initializeProductDetails() {
     loadLocalImage();
-    // Assuming product data is not fetched from the API
     const productName = 'Classic V-Neck';
     const productPrice = 75.00;
     const availableSizes = ['S', 'M', 'L']; // List of available sizes
@@ -52,20 +51,20 @@ function addToMiniCart(productName, productImageSrc, size) {
     // Create card element
     const card = document.createElement('div');
     card.classList.add('card', 'text-center', 'm-2');
-    card.style.width = '300px'; // Set the width of the card
+    card.style.width = '300px';
 
     // Card body
     const cardBody = document.createElement('div');
     cardBody.classList.add('card-body');
-    cardBody.style.display = 'flex'; // Set display to flex
-    cardBody.style.flexDirection = 'row'; // Set flex-direction to row
+    cardBody.style.display = 'flex';
+    cardBody.style.flexDirection = 'row';
     
     // Product image
     const image = document.createElement('img');
     image.src = productImageSrc;
     image.alt = productName;
     image.classList.add('card-img-top');
-    image.style.width = '100px'; // Set the width of the image
+    image.style.width = '100px';
     
     // Product details
     const details = document.createElement('div');
@@ -96,8 +95,8 @@ function addToCart() {
     const selectedSize = selectedButton.dataset.size;
 
     // Add selected product to mini-cart
-    const productName = 'Classic V-Neck'; // Static product name
-    const productImageSrc = 'classic-tee.jpg'; // Static product image path
+    const productName = 'Classic V-Neck'; 
+    const productImageSrc = 'classic-tee.jpg';
     addToMiniCart(productName, productImageSrc, selectedSize);
 }
 
