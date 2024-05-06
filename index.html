@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link to Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">T-shirt Empire</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-shopping-cart cart-icon" id="cart-icon"></i
+            ></a>
+            <div class="mini-cart" id="mini-cart">
+              <h3>Mini Cart</h3>
+              <ul id="cart-items">
+                <!-- Items will be dynamically added here -->
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container mt-4 d-flex flex-column flex-md-row">
+        <img
+        id="product-image"
+        alt="Classic Tee"
+        src="classic-tee.jpg"
+      />
+      <section class="product-details">
+        <div class="product-info">
+          <h2 id="product-name">Classic V-Neck</h2>
+          <span id="product-price">$75.00</span>
+          <p id="product-description">
+            Elevate your casual wardrobe with this classic men's white V-neck
+            t-shirt. Crafted from premium, breathable cotton, this tee offers
+            exceptional comfort for everyday wear. Its versatile design pairs
+            effortlessly with jeans or shorts for a laid-back, stylish look. The
+            V-neckline adds a modern touch, making it perfect for layering or
+            wearing on its own.
+          </p>
+
+          <div class="product-sizes mb-4">
+            <label for="shirt-size-buttons">Select Size:</label>
+            <div id="shirt-size-buttons" class="btn-group">
+              <button class="btn btn-outline-dark" data-size="S">S</button>
+              <button class="btn btn-outline-dark" data-size="M">M</button>
+              <button class="btn btn-outline-dark" data-size="L">L</button>
+            </div>
+          </div>
+          <button id="add-to-cart">Add to Cart</button>
+          <p id="error-message" class="text-danger" style="display: none"></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstrap and JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
