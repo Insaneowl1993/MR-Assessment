@@ -24,19 +24,18 @@ body {
     cursor: pointer;
 }
 
-#mini-cart {
-    display: none;
+.mini-cart {
+    display: none; 
     position: absolute;
-    top: 30px;
+    top: 40px; 
     right: 0;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 400px;
     padding: 10px;
     max-height: 300px;
     overflow-y: auto;
 }
-
 main.container {
     display: flex;
     justify-content: center;
@@ -109,4 +108,17 @@ main.container {
     background-color:#cccccc;
     color: #555555;
     transition: 0.5s;
+}
+
+/* Adjust the size of the image inside the card */
+.card-img-top {
+    width: 80px;
+    height: auto; 
+}
+
+/* Make the cards inside the mini cart responsive */
+.card {
+    width: 100%; 
+    max-width: 250px; 
+    margin-bottom: 10px; 
 }
